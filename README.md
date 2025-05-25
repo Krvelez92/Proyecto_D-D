@@ -61,7 +61,9 @@ Proyecto_D-D/
 │
 └── README.md # Este archivo
 ```
+
 **Extra**
+
 Para el funcionamiento de todo esto, te recomendamos que uses un entorno virtual.
 ```
 python -m venv entorno_virtual
