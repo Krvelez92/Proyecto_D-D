@@ -1,0 +1,8 @@
+# Api Key
+*.env
+
+# logs
+__pycache__/
+
+# entorno virtual
+entorno_virtual/
