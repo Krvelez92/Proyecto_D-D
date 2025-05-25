@@ -78,7 +78,7 @@ python -m venv entorno_virtual
 pip install -r requirements.txt
 ```
 ## 🔐 Configura .env
-Crea un archivo .env con tu clave de Google Gemini:
+Crea un archivo .env con tu clave de Google Gemini, tienes un archivo de ejemplo .env.ejemplo para que te puedas ayudar:
 ```
 gemini_api_key=TU_CLAVE_SECRETA
 ```
