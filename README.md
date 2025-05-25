@@ -17,8 +17,11 @@ Este proyecto es una aplicación interactiva para crear personajes de D&D paso a
 ## 🚀 ¿Qué puedes hacer?
 
 ✅ Crear personajes de D&D mediante conversación con un asistente IA  
+
 ✅ Consultar contenido del manual del jugador  
+
 ✅ Guardar automáticamente el personaje en una base de datos 
+
 ✅ Visualizar los personajes creados desde una pestaña del frontend  
 
 ---
@@ -94,6 +97,7 @@ Usa este sistema para generar personajes, aprender las reglas y sumergirte en el
 
 ## 🤝 Contribuciones
 ¡Pull requests y sugerencias son bienvenidas!
+
 
 
 
