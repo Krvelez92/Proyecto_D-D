@@ -4,7 +4,7 @@
 
 # 🐉 Creador de Personajes para Dungeons & Dragons (D&D)
 
-Este proyecto es una aplicación interactiva para crear personajes de D&D paso a paso, consultar información del manual del jugador y visualizar personajes guardados. Combina un backend en **FastAPI (contenedizado con Docker)** y una interfaz amigable construida con **Streamlit**.
+Este proyecto es una aplicación interactiva para crear personajes de D&D paso a paso, consultar información del manual del jugador y visualizar personajes guardados. Combina un backend en **FastAPI** y una interfaz amigable construida con **Streamlit**.
 
 ---
 
