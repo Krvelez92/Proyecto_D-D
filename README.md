@@ -4,7 +4,7 @@
 
 # 🐉 Creador de Personajes para Dungeons & Dragons (D&D)
 
-Este proyecto es una aplicación interactiva para crear personajes de D&D paso a paso, consultar información del manual del jugador y visualizar personajes guardados. Combina un backend en **FastAPI (contenedizado con Docker)** y una interfaz amigable construida con **Streamlit**.
+Este proyecto es una aplicación interactiva para crear personajes de D&D paso a paso, consultar información del manual del jugador y visualizar personajes guardados. Combina un backend en **FastAPI** y una interfaz amigable construida con **Streamlit**.
 
 ---
 
@@ -17,8 +17,11 @@ Este proyecto es una aplicación interactiva para crear personajes de D&D paso a
 ## 🚀 ¿Qué puedes hacer?
 
 ✅ Crear personajes de D&D mediante conversación con un asistente IA  
+
 ✅ Consultar contenido del manual del jugador  
+
 ✅ Guardar automáticamente el personaje en una base de datos 
+
 ✅ Visualizar los personajes creados desde una pestaña del frontend  
 
 ---
@@ -75,7 +78,7 @@ python -m venv entorno_virtual
 pip install -r requirements.txt
 ```
 ## 🔐 Configura .env
-Crea un archivo .env con tu clave de Google Gemini:
+Crea un archivo .env con tu clave de Google Gemini, tienes un archivo de ejemplo .env.ejemplo para que te puedas ayudar:
 ```
 gemini_api_key=TU_CLAVE_SECRETA
 ```
@@ -94,6 +97,7 @@ Usa este sistema para generar personajes, aprender las reglas y sumergirte en el
 
 ## 🤝 Contribuciones
 ¡Pull requests y sugerencias son bienvenidas!
+
 
 
 
