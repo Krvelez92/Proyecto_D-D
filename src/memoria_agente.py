@@ -8,19 +8,19 @@ from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.agents import Tool, initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
-from clases import DnDPersonaje, save_character_to_db
+from src.clases import DnDPersonaje, save_character_to_db
 from unidecode import unidecode
 
 #----------------------------------------------------------------------------------------------------------------------------------
 
 # Creamos las variables para iniciar el proceso
-config = dotenv_values("../.env")
+config = dotenv_values(".env")
 personaje = DnDPersonaje()
 paso_actual = {"etapa": "inicio"}
 
 # Llamamos al la base de datos vectorizada
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-db = FAISS.load_local("faiss_index", embedding_model, allow_dangerous_deserialization=True)
+db = FAISS.load_local("src/faiss_index", embedding_model, allow_dangerous_deserialization=True)
 retriever = db.as_retriever(search_kwargs={"k": 3})
 
 #----------------------------------------------------------------------------------------------------------------------------------

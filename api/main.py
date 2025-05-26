@@ -5,8 +5,8 @@
 
 from fastapi import FastAPI
 from pydantic import BaseModel
-from memoria_agente import ag_personaje, actualizar_datos_personaje, ag_manual
-from clases import DnDPersonaje
+from src.memoria_agente import ag_personaje, actualizar_datos_personaje, ag_manual
+from src.clases import DnDPersonaje
 import sqlite3
 
 #------------------------------------------------------------

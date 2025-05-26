@@ -30,7 +30,7 @@ def load_pdf_text(filepath:str) -> list:
 
 #----------------------------------------------------------------------------------------------------------------------------------
 
-docs = load_pdf_text('../docs/Dungeons_and_Dragons_Players_Handbook_2024.pdf') # Cargamos el documento desde la carpeta docs y pasamos por función load_pdf_text.
+docs = load_pdf_text('./docs/Dungeons_and_Dragons_Players_Handbook_2024.pdf') # Cargamos el documento desde la carpeta docs y pasamos por función load_pdf_text.
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200) # Dividimos en chunks el documento para poder cargarlo y dividirlo.
 chunks = splitter.split_documents(docs)
@@ -39,7 +39,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 
 vector_store = FAISS.from_documents(docs, embeddings) # Vectorizar con FAISS
 
-vector_store.save_local("faiss_index") # Guardamos la bbdd vertorizada del documento.
+vector_store.save_local("src/faiss_index") # Guardamos la bbdd vertorizada del documento.
 
 
 print('Una instancia de la BBDD de vectores se ha cargado en "faiss_index".')
