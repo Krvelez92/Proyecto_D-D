@@ -16,7 +16,7 @@ class DnDPersonaje:
         }
 
 def save_character_to_db(char_dict):
-    conn = sqlite3.connect("../api/bd/dnd.db")
+    conn = sqlite3.connect("./api/bd/dnd.db")
     c = conn.cursor()
     c.execute('''
     INSERT INTO characters (raza, clase) VALUES (?, ?)

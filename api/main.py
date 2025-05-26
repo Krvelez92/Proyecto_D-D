@@ -24,7 +24,7 @@ async def inicio():
 @app.post("/crear_bd")
 def crear_base_datos():
     try:
-        conn = sqlite3.connect("../api/bd/dnd.db")
+        conn = sqlite3.connect("./api/bd/dnd.db")
         cursor = conn.cursor()
 
         cursor.execute('DROP TABLE IF EXISTS characters;')
@@ -67,7 +67,7 @@ def chat(msg: Message):
 
 @app.get("/all_bd")
 def mirar_bd():
-    conn = sqlite3.connect("../api/bd/dnd.db")
+    conn = sqlite3.connect("./api/bd/dnd.db")
     conn.row_factory = sqlite3.Row 
     cursor = conn.cursor()
     rows = cursor.execute('select * from characters;').fetchall()
