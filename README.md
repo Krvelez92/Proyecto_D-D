@@ -92,15 +92,24 @@ GET /all_bd — ver todos los personajes guardados
 La documentación automática de la API está disponible en:
 👉 http://localhost:8000/docs
 
+## 🐳 Ejecutar esta app con Docker
+
+Podés descargar y correr esta app directamente desde Docker Hub:
+
+```bash
+docker pull krvelez92/proyecto-dnd:latest
+```
+
 ## 🎲 ¡A jugar!
 Usa este sistema para generar personajes, aprender las reglas y sumergirte en el mundo de Dungeons & Dragons con ayuda de la IA.
 
 ## 🤝 Contribuciones
 ¡Pull requests y sugerencias son bienvenidas!
 
+## 🌍 Accedé a la app:
+**FastAPI:** http://localhost:8000
 
-
-
+**Streamlit:** http://localhost:8501
 
 🧙 **Autor**
 Desarrollado por Krvelez92 🛡️
