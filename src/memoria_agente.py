@@ -2,7 +2,6 @@
 #####            Librerias           #####
 ##########################################
 
-from dotenv import dotenv_values
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -10,11 +9,19 @@ from langchain.agents import Tool, initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
 from src.clases import DnDPersonaje, save_character_to_db
 from unidecode import unidecode
+import os
 
 #----------------------------------------------------------------------------------------------------------------------------------
 
 # Creamos las variables para iniciar el proceso
-config = dotenv_values(".env")
+#config = dotenv_values(".env")
+
+config = {"gemini_api_key": os.environ.get("gemini_api_key")}
+
+if not config["gemini_api_key"]:
+    raise RuntimeError("Falta la variable de entorno 'gemini_api_key'")
+
+
 personaje = DnDPersonaje()
 paso_actual = {"etapa": "inicio"}
 
